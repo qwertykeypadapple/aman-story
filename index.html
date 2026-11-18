@@ -163,15 +163,13 @@ const S = [
   {ch:'Chapter 03', year:'2016–20',   title:'Engineering at IIT Delhi', line:'B.Tech, Electrical Engineering. First paper at IEEE, 2018.', icon:'bolt', ll:[28.5450,77.1926], z:8},
   {ch:'Chapter 04', year:'2020',      title:'Magicbricks, then the world paused', line:'Backend Developer. Five months in, COVID hit.', icon:'building', z:5,
      stat:{from:0, n:5, label:'months as a backend developer'}},
-  {ch:'Chapter 05', year:'2020–22',   big:'Home', title:'Home mode: hacking & games', line:'Capture-the-flags, competitions, and a lot of games.', icon:'terminal', z:4},
-  {ch:'Chapter 06', year:'2021–23',   title:'Building COIKOSITY', line:'Volunteer to Technical Lead at a startup.', icon:'rocket', z:4,
-     stat:{from:0, n:40, pre:'₹', suf:'L', label:'raised from Govt. of India (AIC)'}},
-  {ch:'Chapter 07', year:'2023',      title:'Quant at WorldQuant', line:'World Rank 151, Brain Challenge.', icon:'chart', z:3,
+  {ch:'Chapter 05', year:'2020–22',   big:'Home', title:'Home mode: hacking & CTFs', line:'Capture-the-flags and online competitions.', icon:'terminal', z:4},
+  {ch:'Chapter 06', year:'2023',      title:'Quant at WorldQuant', line:'World Rank 151, Brain Challenge.', icon:'chart', z:3,
      stat:{from:0, n:90, suf:'+', label:'alphas built'}},
-  {ch:'Chapter 08', year:'2024–26',   title:'Robots at KAIST, Korea', line:'Researcher. Robots that see, and follow people.', icon:'vision', ll:[36.3725,127.3604], z:8},
-  {ch:'Chapter 09', year:'2026',      title:'Cleaning up space debris', line:'ESA × Kaggle machine-unlearning challenge. Solo.', icon:'orbit', z:2,
+  {ch:'Chapter 07', year:'2024–26',   title:'Robots at KAIST, Korea', line:'Researcher. Robots that see, and follow people.', icon:'vision', ll:[36.3725,127.3604], z:8},
+  {ch:'Chapter 08', year:'2026',      title:'Cleaning up space debris', line:'ESA × Kaggle machine-unlearning challenge. Solo.', icon:'orbit', z:2,
      stat:{from:567, n:4, pre:'#', label:'of 567 teams worldwide'}},
-  {ch:'Chapter 10', year:'Now · Zürich', big:'Zürich', title:'The next chapter', line:'Let’s write it together.', img:PHOTO, ll:[47.3769,8.5417], z:6, finale:true}
+  {ch:'Chapter 09', year:'Now · Zürich', big:'Zürich', title:'The next chapter', line:'Let’s write it together.', img:PHOTO, ll:[47.3769,8.5417], z:6, finale:true}
 ];
 const ICONS = {
   sprout:   '<path d="M12 21v-9"/><path d="M12 12C12 8 9 5 4 5c0 4 3 7 8 7z"/><path d="M12 10c0-3.5 2.5-6 7-6 0 3.5-2.5 6-7 6z"/><path d="M8 21h8"/>',
@@ -212,7 +210,7 @@ function buildSlides(){
       el.innerHTML = `
         <div class="content">
           <div class="ring r" style="--d:0"><img src="${PHOTO}" alt="Aman Singh" onerror="this.parentNode.style.display='none'"></div>
-          <div class="ch r" style="--d:1">A life in ten chapters</div>
+          <div class="ch r" style="--d:1">A life in nine chapters</div>
           <h1 class="title">${titleHTML('Aman Singh')}</h1>
           <p class="line r" style="--d:4">Engineer · Researcher · Builder</p>
           <button class="watch r" style="--d:5" id="watch">▶&nbsp; Watch my story</button>
